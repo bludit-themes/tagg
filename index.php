@@ -24,8 +24,15 @@
 		<h1 class="logo"><a href="<?php echo $site->url() ?>"><?php echo $site->title() ?></a></h1>
 		<ul class="menu">
 			<div class="menu__item toggle"><span></span></div>
-			<li class="menu__item"><a href="" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
-			<li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+			<!-- Social Networks -->
+			<?php foreach (Theme::socialNetworks() as $key=>$label): ?>
+			<li class="menu__item">
+				<a class="link link--dark" href="<?php echo $site->{$key}(); ?>" target="_blank">
+				<i class="fa fa-<?php echo $key ?>"></i> <?php echo $label ?>
+				</a>
+			</li>
+			<?php endforeach; ?>
+			<li class="menu__item"><a href="<?php echo $site->url() ?>" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
 		</ul>
 	</nav>
 
