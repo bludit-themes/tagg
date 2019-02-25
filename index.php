@@ -32,7 +32,6 @@
 				</a>
 			</li>
 			<?php endforeach; ?>
-			<li class="menu__item"><a href="<?php echo $site->url() ?>" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
 		</ul>
 	</nav>
 
