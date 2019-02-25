@@ -1,0 +1,16 @@
+.page-title {
+	font-size: 2em;
+}
+
+li.tags a.active {
+    color: #2929ff;
+}
+
+pre {
+	border-radius: 3px;
+	font-family: Space Mono, SFMono-Regular, Menlo,Monaco, Consolas, Liberation Mono, Courier New, monospace;
+	background: var(--bg-color);
+	border: 1px solid var(--code-bg-color);
+	color: var(--primary-color-light);
+	padding: 1em;
+}
