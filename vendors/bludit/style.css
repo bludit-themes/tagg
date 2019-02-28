@@ -14,3 +14,7 @@ pre {
 	color: var(--primary-color-light);
 	padding: 1em;
 }
+
+.doc__content {
+	max-width: 680px;
+}
