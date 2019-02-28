@@ -15,10 +15,14 @@
 		echo Theme::css('vendors/scribbler/scribbler-global.css');
 		echo Theme::css('vendors/scribbler/scribbler-doc.css');
 		echo Theme::css('vendors/bludit/style.css');
+	?>
+	<?php
 		Theme::plugins('siteHead');
 	?>
 </head>
 <body>
+	<?php Theme::plugins('siteBodyBegin') ?>
+
 	<div class="doc__bg"></div>
 	<nav class="header">
 		<h1 class="logo"><a href="<?php echo $site->url() ?>"><?php echo $site->title() ?></a></h1>
@@ -81,5 +85,6 @@
 	?>
 	<script>hljs.initHighlightingOnLoad();</script>
 
+	<?php Theme::plugins('siteBodyEnd') ?>
 </body>
 </html>

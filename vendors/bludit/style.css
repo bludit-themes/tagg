@@ -15,6 +15,10 @@ pre {
 	padding: 1em;
 }
 
+code {
+	background: var(--bg-color);
+}
+
 .doc__content {
 	max-width: 680px;
 	margin: 0 auto;
