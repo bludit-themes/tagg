@@ -10,10 +10,15 @@
 		<a href="<?php echo $page->permalink() ?>">
 			<h2 class="page-title"><?php echo $page->title() ?></h2>
 		</a>
+		<div class="page-date"><?php echo $page->date() ?></div>
+
 		<?php echo $page->contentBreak(); ?>
 
 		<?php Theme::plugins('pageEnd') ?>
 	</div>
+	<?php if ($page->readMore()): ?>
+		<a class="read-more" href="<?php echo $page->permalink() ?>">Read more</a>
+	<?php endif; ?>
 	<hr>
 <?php endforeach; ?>
 </article>

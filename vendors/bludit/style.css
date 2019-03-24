@@ -1,5 +1,11 @@
 .page-title {
 	font-size: 2em;
+	margin-bottom: 0;
+}
+
+.page-date {
+	color: #959DA5;
+	margin-bottom: 10px;
 }
 
 li.tags a.active {
@@ -22,4 +28,8 @@ code {
 .doc__content {
 	max-width: 680px;
 	margin: 0 auto;
+}
+
+a.read-more {
+	color: var(--accent-color-dark);
 }

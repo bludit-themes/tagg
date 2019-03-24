@@ -9,7 +9,7 @@
 	<?php
 		echo Theme::metaTags('title');
 		echo Theme::metaTags('description');
-		echo Theme::favicon('img/favicon.png');
+		echo Theme::favicon('vendors/bludit/favicon.png');
 		echo Theme::css('vendors/google-fonts/fonts/nunito.css');
 		echo Theme::css('vendors/line-awesome/css/line-awesome-font-awesome.min.css');
 		echo Theme::css('vendors/scribbler/scribbler-global.css');
