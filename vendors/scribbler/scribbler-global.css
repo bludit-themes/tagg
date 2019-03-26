@@ -279,6 +279,10 @@ table td:first-child {
     padding: 0.5rem 1rem;
   }
 
+  .logo {
+	  padding-left: 10px;
+  }
+
   .toggle {
     display: block;
   }
